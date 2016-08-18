@@ -74,3 +74,7 @@ is nested inside the contact-info section) */
   width: 500px;
   height: 150px;
 }
+
+div.font-size {
+  font-size: .8em;
+}
