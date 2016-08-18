@@ -25,6 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* 
+-we noticed some fonts were different how did it decide which heading was going to have which style?
 
 You can select a class (preceded by a period) 
 or ID (preceded by a hash).
