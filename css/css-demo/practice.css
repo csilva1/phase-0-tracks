@@ -1,0 +1,37 @@
+/* What does the "Cascading" part of Cascading Style 
+sheets mean? When there is a conflict between two CSS rules
+that select the same element, how does your browser decide 
+which rule to use?
+Cascading is used in a manner specifically referring to the priority-based rule 
+matching mechanism.
+When documents load in a browser, all declarations are sorted and given a weight. 
+They are then applied to a document based on this weight.
+Find a cheat sheet or quick guide on CSS selectors, 
+or refer to a cheat sheet you've already bookmarked. 
+What is a pseudoselector? Write a CSS rule that uses 
+a pseudoselector.
+- A pseudo selector can be used for links on a webpage ex: changes
+color when the link was already visited;
+- /* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+/*How can you use CSS to select the child element of 
+another element (for instance, a section inside 
+another section, or an li inside a ul but not 
+inside an ol)? Add an example of such a rule in 
+your CSS. 
+An adjacent sibling combinator selector allows you to select an element that
+ is directly after another specific element.
+ https://css-tricks.com/child-and-sibling-selectors/.
+
+*/

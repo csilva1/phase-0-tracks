@@ -25,6 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* 
+-we noticed some fonts were different how did it decide which heading was going to have which style?
 
 You can select a class (preceded by a period) 
 or ID (preceded by a hash).
@@ -63,4 +64,17 @@ is nested inside the contact-info section) */
 
 #contact-info p {
   line-height: .8;
+}
+
+#job {
+  background-color: #e9e5dc;
+  padding: 10px;
+  border-radius: 25px;
+  margin: 10px;
+  width: 500px;
+  height: 150px;
+}
+
+div.font-size {
+  font-size: .8em;
 }
