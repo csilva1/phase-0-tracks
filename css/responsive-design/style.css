@@ -14,7 +14,7 @@ main {
   vertical-align: middle;
 }
 body {
-  width: 960px;
+  max-width: 960px;
 }
 cite {
   display: block;
