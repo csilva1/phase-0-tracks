@@ -3,7 +3,12 @@ blockquote {
   padding: 15px;
   margin-left: 0px;
 }
-
+#external-links {
+  width: 200px;
+}
+main {
+  width: 756px;
+}
 body {
   width: 960px;
 }
