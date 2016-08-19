@@ -42,3 +42,20 @@ figcaption {
   font-style: italic;
   text-align: right;
 }
+@media screen and (max-width: 500px) {
+  body {
+    background-color: hotpink;
+    font-size: 75%;
+  }
+  #external-links {display: block; min-width: 100%;}
+  main {display: block; min-width: 100%;} 
+}
+
+
+
+
+
+
+
+
+
