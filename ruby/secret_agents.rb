@@ -33,8 +33,23 @@ def decrypt(string)
 	return decrypted_string
 end
 
-puts encrypt("some text")
-puts encrypt("z")
+#testing functions
+#puts encrypt("abc")
+#puts encrypt("zed")
+#puts decrypt("bcd")
+#puts decrypt("afe")
 
-puts decrypt("tpnf ufyu")
-puts decrypt("a")
+#using encrypt and decrypt will return the original password
+#puts decrypt(encrypt("swordfish"))
+
+puts "Would you like to encrypt or decrypt your password? (e/d)"
+preference = gets.chomp
+
+puts "Please enter your password: "
+password = gets.chomp
+
+if preference == "e"
+	puts encrypt(password)
+elsif preference == "d"
+	puts decrypt(password)
+end
