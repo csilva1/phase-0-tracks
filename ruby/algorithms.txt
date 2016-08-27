@@ -1,0 +1,15 @@
+-Locate elevator in building
+-Once elevator is located:
+	-face the front of the elevator and look for two buttons on either the sides of the elevator; One button has an arrow pointing up and the other has an arrow pointing down.
+	-once buttons are located, press the button that has an arrow pointing up
+	-Elevator doors should open
+-if elevator doors do open
+	-take steps inside the elevator opening until you reach a solid object
+	-then turn, facing the elevator doors, stay put
+-else elevator doors do not open
+	-then wait till doors open
+-Once inside the elevator:
+	-check on the side of the doors for buttons with numbers
+	-press appropriate button that reflects the floor number of your destination.
+-Doors will close
+-end
