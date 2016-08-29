@@ -65,6 +65,7 @@ elsif (insurance == "y") && (order_garlic_bread == "y")
 else puts "Results inconclusive"
 
 end		
+puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
 end
 
 	
