@@ -29,13 +29,26 @@ order_garlic_bread = gets.chomp
 		is_a_vampire = true
 	end
 
-puts "Whould you like to enroll in the company's health insurance? (y/n)"
+puts "Would you like to enroll in the company's health insurance? (y/n)"
 insurance = gets.chomp
 	if insurance == "y"
 		is_a_vampire = false
 	else insurance == "n"
 		is_a_vampire = true
 	end
+puts "Do you have any allergies? Please list one at a time"
+
+while allergies = gets.chomp
+	case allergies
+	when "sunshine"
+		puts "Probably a vampire"
+		break
+	when "done"
+		break
+	else
+		puts "Do you have anymore allergies?"
+	end
+end
 
 if name == "Drake Cula"
 	puts "Definitely a vampire"
@@ -45,10 +58,11 @@ elsif (order_garlic_bread == "n") && (insurance == "n")
 	puts "Probably a vampire"
 elsif (age && order_garlic_bread) || insurance
 	puts "Probably not a vampire"
+elsif allergies == sunshine
+	puts "Probably a vampire"
 elsif (insurance == "y") && (order_garlic_bread == "y")
 	puts "Probably not a vampire"
-else 
-	puts "Results inconclusive"
+else puts "Results inconclusive"
 
 end		
 end
