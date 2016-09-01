@@ -7,8 +7,6 @@
 
 numbers = [1, 2, 3]
 
-#cars = {'Honda' => 'Civic', 'Toyota' => 'Camry', 'Tesla' => 'Model_S'}
-
 #numbers.each do |number|
 #	p number
 #end
@@ -19,4 +17,12 @@ number.next
 end
 
 p numbers
+
+cars = {'Honda' => 'Civic', 'Toyota' => 'Camry', 'Tesla' => 'Model S'}
+
+cars.each do |manufacturer, model|
+	puts "The best selling car from #{manufacturer} is the #{model}."
+end
+
+
 
