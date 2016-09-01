@@ -23,7 +23,7 @@ cars = {'Honda' => 'Civic', 'Toyota' => 'Camry', 'Tesla' => 'Model S'}
 cars.each do |manufacturer, model|
 	puts "The best selling car from #{manufacturer} is the #{model}."
 end
-
+#Array's
 #1
 numbers = [1,2,3,4,5,6,7,8,9]
 
@@ -43,6 +43,27 @@ p numbers
 
 #4
 numbers.drop_while {|number| number < 3 } 
+
+#Hashe's
+#1 
+fruit = {"apple" => 1, "banana" => 2, "grapes" => 3}
+fruit.delete("apple")
+
+#2
+fruit.keep_if { |fruit_type, price| price < 2}
+
+p fruit
+
+#3
+fruit.keep_if { |fruit_type, price| price.even?}
+
+p fruit
+
+#4
+fruit.keep_if { | fruit_type, price | 
+	price == 2
+}
+p fruit
 
 
 
