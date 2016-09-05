@@ -1,4 +1,5 @@
-#Release 0def search_array(array,int)
+#Release 0
+def search_array(array,int)
 	
 	counter = -1
 	array.each { |x| counter += 1 
