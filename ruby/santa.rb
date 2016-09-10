@@ -6,19 +6,32 @@
 class Santa
 	
 	def speak
-	print "Ho, ho, ho! Haaaaapppy holidays!"	# Whatever you want done
+		print "Ho, ho, ho! Haaaaapppy holidays!"	# Whatever you want done
 	end
 	
-		def eat_milk_and_cookies(type)
+	def eat_milk_and_cookies(type)
 		print "That was a good #{type}"	
-		end
-	
-	
-	def initialize
-		print "Initializing Santa instance.."
 	end
+	
+	
+	def initialize(gender, ethnicity)
+		@gender = gender
+		@ethnicity = ethnicity
+		print " Initializing #{@gender} #{@ethnicity} Santa instance..."
+	end
+	
 end
 
-test = Santa.new
-test.speak
-test.eat_milk_and_cookies("snickerdoodle")
+santa = Santa.new("female", "Mexican")
+santa.speak
+santa.eat_milk_and_cookies("snickerdoodle")
+
+
+santa = Santa.new("unicorn", "Puerto Rican")
+santa.speak
+santa.eat_milk_and_cookies("macadamiun nut cookie")
+
+
+
+
+
