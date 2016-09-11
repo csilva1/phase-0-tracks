@@ -4,7 +4,8 @@
 # 3rd. instance: 'initialize' create a method that PRINTS 'Initilaizing Santa instance...'
 
 class Santa
-
+	# attr_reader :age, :ethnicity, :gender =>not needed because there is attr_accessor which makes it writable and readable
+	attr_accessor :age, :ethnicity, :gender
 	def speak
 		print "Ho, ho, ho! Haaaaapppy holidays!"
 	end
@@ -41,28 +42,28 @@ class Santa
 	def default_ranking
 		["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
 	end
-	#getter method
-	def age
-		@age
-	end
+	# #getter method
+	# def age
+	# 	@age
+	# end
 	
-	def ethnicity
-		@ethnicity
-	end
+	# def ethnicity
+	# 	@ethnicity
+	# end
 	
-	def gender
-		@gender
-	end
-	#setter method
-	def gender=(new_gender)
-		@gender = new_gender
-	end
-	def age=(new_age)
-		@age = new_age
-	end
-	def ethnicity=(new_ethnicity)
-		@ethnicity = new_ethnicity
-	end
+	# def gender
+	# 	@gender
+	# end
+	# #setter method
+	# def gender=(new_gender)
+	# 	@gender = new_gender
+	# end
+	# def age=(new_age)
+	# 	@age = new_age
+	# end
+	# def ethnicity=(new_ethnicity)
+	# 	@ethnicity = new_ethnicity
+	# end
 end
 
 santas = Santa.new("female", "Latina")
@@ -97,6 +98,35 @@ puts "Santa is now #{santas.age}"
 santas.ethnicity = "The Santa that was formerly Latina is now a unicorn"
 puts "Santa's can do more than bring presents, they can also transform. #{santas.ethnicity}"
 
+santas = []
+santas << Santa.new("agender", "black")
+santas << Santa.new("female", "Latino")
+santas << Santa.new("bigender", "white")
+santas << Santa.new("male", "Japanese")
+santas << Santa.new("female", "prefer not to say")
+santas << Santa.new("gender fluid", "Mystical Creature (unicorn)")
+santas << Santa.new("N/A", "N/A")
+
+santas = []
+example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+example_genders.length.times do |i|
+  santas << Santa.new(example_genders[i], example_ethnicities[i])
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -105,6 +135,9 @@ puts "Santa's can do more than bring presents, they can also transform. #{santas
 # 3.times do |i|
 # 	santa_age << Santa.new(random_age.sample)
 # end
+
+
+
 
 
 
