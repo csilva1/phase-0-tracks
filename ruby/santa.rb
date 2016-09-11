@@ -4,7 +4,7 @@
 # 3rd. instance: 'initialize' create a method that PRINTS 'Initilaizing Santa instance...'
 
 class Santa
-	attr_reader :example_gender, :exampl_ethnicities
+	attr_reader :example_gender, :exampl_ethnicities, :random_age
 	#=>not needed because there is attr_accessor which makes it writable and readable
 	attr_accessor :age, :ethnicity, :gender
 	def speak
@@ -19,8 +19,7 @@ class Santa
 	def initialize(gender, ethnicity)
 		@gender = gender
 		@ethnicity = ethnicity
-		# random_age = (0..140).to_a
-		# @age = random_age.sample
+		@random_age = rand(140)
 		@age = 0
 		@reindeer_ranking = default_ranking
 		print #{@reindeer_ranking}
@@ -45,7 +44,7 @@ class Santa
 	end
 	
 	def santa_info
-		puts "This Santa is #{@gender}, and #{@ethnicity}"
+		puts "This Santa is #{@random_age} yrs old, #{@gender}, and #{@ethnicity}"
 	end
 	
 end
@@ -95,7 +94,6 @@ how_many.times do
 	Santa.new(example_genders.sample, example_ethnicities.sample).santa_info
 
 end
-
 
 
 
