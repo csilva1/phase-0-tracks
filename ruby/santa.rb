@@ -39,6 +39,21 @@ class Santa
 		["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
 	end
 	#getter method
+	def age
+		@age
+	end
+	
+	def ethnicity
+		@ethnicity
+	end
+	
+	def gender
+		@gender
+	end
+	#setter method
+	def gender=(new_gender)
+		@gender = new_gender
+	end
 end
 
 santas = Santa.new("female", "Latina")
@@ -46,23 +61,57 @@ santas.speak
 santas.eat_milk_and_cookies("snickerdoodle")
 
 
-santas = Santa.new("unicorn", "Asian")
-santas.speak
-santas.eat_milk_and_cookies("macadamiun nut cookie")
+# santas = Santa.new("unicorn", "Asian")
+# santas.speak
+# santas.eat_milk_and_cookies("macadamiun nut cookie")
 
-santas = Santa.new("male", "black")
-santas.speak
-santas.eat_milk_and_cookies("macadamiun nut cookie")
+# santas = Santa.new("male", "black")
+# santas.speak
+# santas.eat_milk_and_cookies("macadamiun nut cookie")
 
-santas = Santa.new("mermaid", "Latino")
-santas.speak
-santas.eat_milk_and_cookies("macadamiun nut cookie")
+# santas = Santa.new("mermaid", "Latino")
+# santas.speak
+# santas.eat_milk_and_cookies("macadamiun nut cookie")
+
+# santas.age = "Santa just had his birthday and is now 1 yrs old!"
 
 santas.get_mad_at("Vixen")
 
 santas.celebrate_birthday
 
+santas.gender = "The Latina santa that was a female"
+puts "#{santas.gender} is now a male."
+
 # end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# random_age = (0..140).to_a
+# santa_age = []
+# 3.times do |i|
+# 	santa_age << Santa.new(random_age.sample)
+# end
+
+
+
+
+
+
+
 
 
 
