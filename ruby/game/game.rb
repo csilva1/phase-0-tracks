@@ -15,7 +15,7 @@
 #loop in driver code
 
 class Guessing_Game
-	attr_reader :length, :word, :attempt_word, :guess_count
+	attr_reader :word, :attempt_word, :guess_count, :length
 	
 
 	def guess(letter)
@@ -28,19 +28,19 @@ class Guessing_Game
 	end
 	def letter_locate(letter)
 		if @word.include?(letter)
-			place_letter(letter)
+			@letter_placement
 		else
 			puts "Nu-uh honey, that letter ain't in the word. Keep trying shugah"
-			joining_word
+			@join_word
 		end
 	end
 		def letter_placement(letter)
-			@word.each_with_index do |input, index|
-				if input = letter
+			@word.each_with_index do |item, index|
+				if item = letter
 					@user_word[index] = letter
 				end
 			end
-			joining_word
+			@join_word
 		end
 
 		def join_word
@@ -66,12 +66,11 @@ puts "#{player1}, type in the guessing word #{@word}"
 word = gets.chomp
 game = Guessing_Game.new(word)
 
-
 while game.guess_count < game.length do
-	puts "Guess the word, by typing a letter!"
+	puts "#{player2} guess #{player1}'s word, by typing a letter!"
 	letter = gets.chomp
 	game.letter_locate(letter)
-	game.guesses(letter)
+	game.guess(letter)
 end
 
 
