@@ -33,10 +33,11 @@ class Guessing_Game
 			puts "Nu-uh honey, that letter ain't in the word. Keep trying shugah"
 			joining_word
 		end
-
+	end
 		def letter_placement(letter)
 			@word.each_with_index do |input, index|
-				if input = letter@user_word[index] = letter
+				if input = letter
+					@user_word[index] = letter
 				end
 			end
 			joining_word
@@ -61,11 +62,17 @@ puts "1st player: Type in your name"
 player1 = gets.chomp
 puts "2nd player: Type in your name"
 player2 = gets.chomp
-puts "#{player1}, type in the guessing word #{word}"
+puts "#{player1}, type in the guessing word #{@word}"
 word = gets.chomp
 game = Guessing_Game.new(word)
 
 
+while game.guess_count < game.length do
+	puts "Guess the word, by typing a letter!"
+	letter = gets.chomp
+	game.letter_locate(letter)
+	game.guesses(letter)
+end
 
 
 
