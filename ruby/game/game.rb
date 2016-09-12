@@ -32,9 +32,32 @@ class Guessing_Game
 		end
 		@all_guesses << letter
 	end
+	def letter_locate(letter)
+		if @word.include?(letter)
+			place_letter(letter)
+		else
+			puts "Nu-uh honey, that letter ain't in the word. Keep trying shugah"
+			joining_word
+		end
 
+		def letter_placement(letter)
+			@word.each_with_index do |input, index|
+				if input = letter@user_word[index] = letter
+				end
+			end
+			joining_word
+		end
+
+		def join_word
+			@new_word = @user_word.join(" ")
+			p @new_word
 end
 
+puts "Hey, Welcome to Guess That Word"
+puts "1st player: Type in your name"
+player1 = gets.chomp
+puts "2nd player: Type in your name"
+player2 = gets.chomp
 
 
 
