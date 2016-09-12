@@ -16,13 +16,7 @@
 
 class Guessing_Game
 	attr_reader :length, :word, :attempt_word, :guess_count
-	def initialize(word)
-		@length = word.length
-		@word = word.split("")
-		@guess_count = 0
-		@attempt_word = Array.new(@length, "_")
-		@all_guesses = []
-	end
+	
 
 	def guess(letter)
 		if @all_guesses.include?(letter)
@@ -51,6 +45,15 @@ class Guessing_Game
 		def join_word
 			@new_word = @user_word.join(" ")
 			p @new_word
+		end
+
+		def initialize(word)
+			@length = word.length
+			@word = word.split("")
+			@guess_count = 0
+			@attempt_word = Array.new(@length, "_")
+			@all_guesses = []
+		end
 end
 
 puts "Hey, Welcome to Guess That Word"
@@ -58,6 +61,9 @@ puts "1st player: Type in your name"
 player1 = gets.chomp
 puts "2nd player: Type in your name"
 player2 = gets.chomp
+puts "#{player1}, type in the guessing word #{word}"
+word = gets.chomp
+game = Guessing_Game.new(word)
 
 
 
