@@ -6,5 +6,8 @@
 function reverse(s) {
   return s.split('').reverse().join('');
 }
-
- word = reverse ("carol");
+if(1 == 1){
+console.log (word = reverse ("carol"));
+} else {
+	console.log(null)
+}
