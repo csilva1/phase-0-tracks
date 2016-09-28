@@ -2,13 +2,13 @@
 #Species---------
 #Puppy Panda
 
-#Characteristics:
+#Characteristics-----------
 #-friendly: yes
 #-name: varies
 #-color: black and white
 #-size: small - medium
 
-#Behavior:
+#Behavior-----------
 #-Cuddler
 #-Eater 
 #-Playful
