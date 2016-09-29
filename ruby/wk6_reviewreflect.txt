@@ -1,0 +1,22 @@
+1.
+-Class: is a blueprint that has set instructions for both attributes and behaviors
+-State: is the characteristics/data of each instance
+-behavior: is what is done within the class to will tell the driver code what to do
+-instance variables: is a name that begins with ‘@‘ and it is confined to whatever object self refers to
+-instance methods: is also known as behavior and does the same thing
+
+2.
+-Attributes are the description, it’s a variable that can be used inside of a class declaration.
+
+3.
+-Driver license:
+the eye color, height, sex, weight and address would be the attributes
+
+4.
+-the initialize method to put default values into the instance variables, it runs whenever a new instance is created and ran with the driver code
+
+5.
+-modules are used when there is a code that will be ran frequently, you can make it into a module so that it can compartmentalize methods.
+
+6.
+- you can use modules to compartmentalize methods and they can be used as mixins to give classes more functionality
