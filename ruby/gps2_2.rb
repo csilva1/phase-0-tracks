@@ -1,1 +1,1 @@
-#GPS 2.2 assignment pair with Dana
+#GPS 2.2 assignment pair with Jung
