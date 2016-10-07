@@ -1,7 +1,7 @@
 # Virus Predictor
 
 # I worked on this challenge by myself
-# We spent [#] hours on this challenge.
+# We spent [2] hours on this challenge.
 
 # EXPLANATION OF require_relative
 #it complements the builtin method require by allowing to load a file that 
@@ -104,7 +104,7 @@ I used .each, but I could have used each_key or  each_pair
  Instance variables are available to all class methods for that instance, so I could just use them freely when
 defining the methods. Thus, I could simply delete the delete the instance variables from the virus effects method, as well as from the line containing
 def speed_of_spread and def predicted_death
-I think the concept that most sunk in for me was the scope of instance variables. I understood that we could use them in the different class
-methods that we write, but some fo the consequences of that were still a little confusing. I think I have a much better udnerstanding of what that means now,
+I think the concept that most sunk in for me was the scope of instance variables. I understood that I could use them in the different class
+methods that I write, but some fo the consequences of that were still a little confusing. I think I have a much better udnerstanding of what that means now,
 and can write code that is more DRY.
 =end
