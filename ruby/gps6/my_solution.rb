@@ -90,3 +90,21 @@ alaska.virus_effects
 
 #=======================================================================
 # Reflection Section
+
+=begin
+The STATE_DATA hash is a nested data structure. The hash itself uses the state name, as a string, for the key and then a hash rocket, and then
+the state population info, or the value, as another hash. WIthin this nested hash, the format changes so that the keys are symbols.
+Using a symbol as a key can make the program run a little faster, but the state names themselves are strings, perhaps because I
+want to show them to the user in the report? Though I could have had them as symbols and sumply converted them to strings when printing.
+both require and require_relative are used to include or import other ruby code from other files into then file you are working in.
+with require 'filename', you must include the $LOAD_PATH<<"." where . is the filepath to the director containing the file you are trying to import
+with require_relative 'filename', you are specifying the filepath relative to the current file, so you don't need to load the filepath if the 
+file you are importing is in the same directory of the file you are working in.
+I used .each, but I could have used each_key or  each_pair
+ Instance variables are available to all class methods for that instance, so I could just use them freely when
+defining the methods. Thus, I could simply delete the delete the instance variables from the virus effects method, as well as from the line containing
+def speed_of_spread and def predicted_death
+I think the concept that most sunk in for me was the scope of instance variables. I understood that we could use them in the different class
+methods that we write, but some fo the consequences of that were still a little confusing. I think I have a much better udnerstanding of what that means now,
+and can write code that is more DRY.
+=end
