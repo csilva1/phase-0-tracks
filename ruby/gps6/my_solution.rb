@@ -1,11 +1,11 @@
 # Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge by myself
 # We spent [#] hours on this challenge.
 
 # EXPLANATION OF require_relative
-#
-#
+#it complements the builtin method require by allowing to load a file that 
+#is relative to the file 
 require_relative 'state_data'
 
 class VirusPredictor
